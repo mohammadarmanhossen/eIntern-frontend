@@ -17,7 +17,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '20'  # Next.js latest compatible version
+          node-version: '20'  
 
       - name: Install dependencies
         run: |
@@ -25,7 +25,7 @@ jobs:
 
       - name: Run tests
         run: |
-          npm run test || echo "No tests found"   # যদি test script না থাকে
+          npm run test || echo "No tests found" 
 
       - name: Build Next.js
         run: |
